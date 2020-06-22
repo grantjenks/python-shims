@@ -13,7 +13,7 @@
 # Setup directories
 /build/
 /dist/
-/pytest_shims.egg-info/
+/shims.egg-info/
 /docs/_build/
 
 # macOS metadata
