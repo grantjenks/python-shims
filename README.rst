@@ -38,7 +38,7 @@ Furthermore, the patch target is referenced using strings to identify the
 object to patch. Most editors lack go-to-definition support for these strings
 which sometimes results in even less readable code.
 
-`Pytest`_ now to the rescue! Here's the same code, now using Pytest:
+Pytest now to the rescue! Here's the same code, now using Pytest:
 
 .. code-block:: python
 
