@@ -125,7 +125,7 @@ function:
 .. code-block:: python
 
    >>> import shims
-   >>> help(shims)    # doctest: +SKIP
+   >>> help(shims)                         # doctest: +SKIP
 
 
 Tutorial
