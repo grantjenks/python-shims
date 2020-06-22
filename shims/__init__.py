@@ -1,2 +1,2 @@
-__title__ = "pytest-shims"
+__title__ = "shims"
 __version__ = "0.0.1"

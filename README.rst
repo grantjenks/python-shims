@@ -1,5 +1,5 @@
-Pytest Shims: Patching and Mocking Utilities
-============================================
+Shims: Patching and Mocking Utilities
+=====================================
 
 `shims`_ is an Apache2 licensed Python module with patching and mocking
 utilities.
@@ -55,95 +55,60 @@ readable code.
    if __name__ == "__main__":
        unittest.main()
 
+// monkeypatch works well in pytest but doesn't go far enough.
 
-
-
-// monkeypatch works well in pytest but doesn't go far enough. End goal is to
-integrate pytest-shims into pytest itself.
+// End goal is to integrate shims into pytest itself.
 
 
 Features
 --------
 
 - Pure-Python
-- Pytest Support (Optional)
+- Pytest Support
 - Developed on Python 3.8
 - Tested on CPython 3.6, 3.7, 3.8 and PyPy, PyPy3
 - Tested using GitHub Actions on Linux, Mac, and Windows
 
-.. image:: https://github.com/grantjenks/pytest-shims/workflows/integration/badge.svg
-   :target: http://www.grantjenks.com/docs/pytest-shims/
+.. image:: https://github.com/grantjenks/python-shims/workflows/integration/badge.svg
+   :target: http://www.grantjenks.com/docs/shims/
 
 
 Quickstart
 ----------
 
-Installing `ivenv`_ is simple with `pip <http://www.pip-installer.org/>`_::
+Installing `shims`_ is simple with `pip <http://www.pip-installer.org/>`_::
 
-  $ pip install ivenv
+  $ pip install shims
 
 You can access documentation in the interpreter with Python's built-in help
 function:
 
 .. code-block:: python
 
-   >>> import ivenv
-   >>> help(ivenv)
-   >>> help(ivenv.activate)
-   >>> help(ivenv.deactivate)
+   >>> import shims
+   >>> help(shims)
 
 
 Tutorial
 --------
 
-The `ivenv`_ module provides two functions for managing virtual environments:
+The `shims`_ module provides utilities for patching and mocking.
 
-.. code-block:: python
-
-   >>> from ivenv import activate, deactivate
-
-The `activate` function accepts a path to a virtual environment directory and
-"activates" that virtual environment within the Python shell.
-
-.. code-block:: python
-
-   >>> activate('path/to/venv/directory')
-
-The `deactivate` function takes no arguments and "deactivates" the virtual
-environment within the Python shell.
-
-.. code-block:: python
-
-   >>> deactivate()
-
-It's also possible to use `ivenv`_ from IPython or Jupyter notebooks. To begin,
-load the `ivenv` extension:
-
-.. code-block:: shell
-
-   %load_ext ivenv
-
-Once the extension is loaded, the "magic" commands: `%activate` and
-`%deactivate` may be used just as their corresponding functions.
-
-.. code-block:: shell
-
-   %activate path/to/venv/directory
-   %deactivate
+// todo
 
 
 Reference
 ---------
 
-* `ivenv Documentation`_
-* `ivenv at PyPI`_
-* `ivenv at GitHub`_
-* `ivenv Issue Tracker`_
+* `shims Documentation`_
+* `shims at PyPI`_
+* `shims at GitHub`_
+* `shims Issue Tracker`_
 
-.. _`ivenv Documentation`: http://www.grantjenks.com/docs/ivenv/
-.. _`ivenv at PyPI`: https://pypi.python.org/pypi/ivenv/
-.. _`ivenv at GitHub`: https://github.com/grantjenks/python-ivenv/
-.. _`ivenv Issue Tracker`: https://github.com/grantjenks/python-ivenv/issues/
+.. _`shims Documentation`: http://www.grantjenks.com/docs/shims/
+.. _`shims at PyPI`: https://pypi.python.org/pypi/shims/
+.. _`shims at GitHub`: https://github.com/grantjenks/python-shims/
+.. _`shims Issue Tracker`: https://github.com/grantjenks/python-shims/issues/
 
 
 License
@@ -162,4 +127,4 @@ under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
 CONDITIONS OF ANY KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations under the License.
 
-.. _`ivenv`: http://www.grantjenks.com/docs/ivenv/
+.. _`shims`: http://www.grantjenks.com/docs/shims/

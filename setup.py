@@ -1,4 +1,4 @@
-"""Package Setup for pytest-shims
+"""Package Setup for Shims
 
 """
 
@@ -31,7 +31,7 @@ setup(
     long_description=readme,
     author="Grant Jenks",
     author_email="contact@grantjenks.com",
-    url="http://www.grantjenks.com/docs/pytest-shims/",
+    url="http://www.grantjenks.com/docs/shims/",
     license="Apache 2.0",
     packages=["shims"],
     tests_require=["tox"],
@@ -49,5 +49,5 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: Implementation :: CPython",
     ],
-    entry_points={"pytest11": ["pytest-shims = shims.pytestplugin"]},
+    entry_points={"pytest11": ["python-shims = shims.pytestplugin"]},
 )
